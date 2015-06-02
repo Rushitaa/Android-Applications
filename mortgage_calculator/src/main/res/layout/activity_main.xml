@@ -1,0 +1,160 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/tableLayout"
+    android:padding="6dp"
+    android:stretchColumns="1,2,3"
+    android:background="#ffdbefff">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tableRow0">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amount Borrowed"
+            android:id="@+id/loanTextView"
+            android:textColor="#000"
+            android:lines="2" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_span = "2"
+            android:id="@+id/loanEditText"
+            android:editable="true"
+            android:textColor="#ffff2017"
+            android:lines="2" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tableRow1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Interest Rate"
+            android:id="@+id/customTextView"
+            android:textColor="#000"
+            android:lines="2" />
+
+        <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span = "2"
+            android:id="@+id/customSeekBar"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp"
+            android:progress="500"
+            android:max="1000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5%"
+            android:id="@+id/customRateTextView"
+            android:lines="2" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tableRow2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loan Term"
+            android:id="@+id/loanTermTextView"
+            android:textColor="#000"
+            android:lines="2" />
+        <RadioGroup>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7 yrs"
+                android:id="@+id/radioButton1"
+                android:onClick="onRadioButtonClicked"
+                android:lines="1" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15 yrs"
+                android:id="@+id/radioButton2"
+                android:onClick="onRadioButtonClicked"
+                android:lines="1" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30 yrs"
+                android:id="@+id/radioButton3"
+                android:onClick="onRadioButtonClicked"
+                android:lines="1" />
+        </RadioGroup>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tableRow3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Taxes/Insurance"
+            android:id="@+id/TaxTextView"
+            android:textColor="#000"
+            android:lines="2" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inclusive"
+            android:id="@+id/checkBox1"
+            android:onClick="onCheckboxClicked"
+            android:lines="2" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tableRow4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monthly Payment"
+            android:id="@+id/monthlyTextView"
+            android:textColor="#000"
+            android:lines="2" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/PaymentEditText"
+            android:text=""
+            android:editable="false"
+            android:textColor="#ffff1910"
+            android:lines="2"
+            android:layout_span="2" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Compute"
+            android:id="@+id/calculateButton"
+            android:background="#ff7ea9ff"
+            android:textColor="#000"
+            android:lines="2" />
+    </TableRow>
+</TableLayout>

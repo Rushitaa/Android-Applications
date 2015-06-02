@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingTop="15dp"
+    android:background="#ffe4ffea">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delicious Cuisine"
+        android:id="@+id/restaurant_name"
+        android:textAlignment="center"
+        android:paddingTop="15dp"
+        android:textColor="#ff1a2fff"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact Information: 408-429-3930"
+        android:id="@+id/contact"
+        android:paddingTop="10dp"
+        android:textSize="22sp"
+        android:textColor="#ff060101" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dial"
+        android:id="@+id/dial_button"
+        android:textSize="20sp" />
+
+</LinearLayout>
